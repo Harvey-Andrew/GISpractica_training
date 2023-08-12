@@ -1,0 +1,497 @@
+ /* 哆啦a梦 */
+.Doraemon {
+    position: relative;
+    height: 711px;
+    width: 576px;
+    z-index: 3;
+    margin: auto;
+    transition: all 3s ease-in-out;
+}
+
+.Doraemon:hover{
+    transform: scale(0.00005);
+}
+
+/* 头 */
+.head {
+    position: absolute;
+    height: 390px;
+    width: 430px;
+    top: 30px;
+    left: 68px;
+    z-index: 2;
+    background-color: #00a0e8;
+    border-radius: 70% 62% 46% 48% / 70% 69% 67% 68%;
+    border: 3px solid #261815;
+}
+
+/* 脸 */
+.face {
+    position: absolute;
+    height: 320px;
+    width: 395px;
+    top: 83px;
+    left: 20px;
+    transform: rotate(-8deg);
+    background-color: #fff;
+    border: 3px solid #261815;
+    border-radius: 59% 50% 70% 80% / 63% 63% 100% 98%;
+}
+
+/* 左眼 */
+.left-eye {
+    position: absolute;
+    height: 110px;
+    width: 85px;
+    top: 21px;
+    left: 115px;
+    background-color: #fff;
+    border: 3px solid #261815;
+    border-radius: 50%;
+}
+.left-eye::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 45px;
+    top: 36px;
+    left: 22px;
+    background-color: #261815;
+    border-radius: 100%;
+}
+.left-eye::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    top: 50px;
+    left: 29px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+/* 右眼 */
+.right-eye {
+    position: absolute;
+    width: 87px;
+    height: 111px;
+    top: 10px;
+    left: 205px;
+    background-color: #fff;
+    border: 3px solid #261815;
+    border-radius: 50%;
+}
+.right-eye::before {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 210px;
+    top: 51px;
+    left: -10px;
+    border-style: solid;
+    border-color: #261815 transparent transparent transparent;
+    border-radius: 50%;
+
+}
+/* 鼻子 */
+.nose {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 106px;
+    left: 180px;
+    background-color: #e3002d;
+    border: 3px solid #261815;
+    border-radius: 50%;
+}
+.nose::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 18px;
+    left: 19px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px 0 #ccc;
+}
+
+
+/* 左侧胡须 */
+.left-beard,
+.left-beard::before,
+.left-beard::after {
+    position: absolute;
+    height: 10px;
+    width: 120px;
+    top: 170px;
+    left: 20px;
+    border-style: solid;
+    border-color: #261815 transparent transparent;
+}
+.left-beard::before,
+.left-beard::after {
+    content: '';
+    width: 110px;
+    top: -22px;
+    left: 10px;
+    transform-origin: top right;
+    transform: rotate(14deg);
+}
+.left-beard::after {
+    top: 16px;
+    left: 6px;
+    transform: rotate(-15deg);
+}
+
+/* 右侧胡须 */
+.right-beard,
+.right-beard::before,
+.right-beard::after {
+    position: absolute;
+    height: 10px;
+    width: 125px;
+    top: 162px;
+    left: 274px;
+    border-style: solid;
+    border-color: #261815 transparent transparent;
+    transform-origin: top left;
+    transform: rotate(-22deg);
+}
+
+.right-beard::before,
+.right-beard::after {
+    content: '';
+    left: -14px;
+    top: -24px;
+    transform: rotate(-10deg);
+
+}
+
+.right-beard::after {
+    left: -8px;
+    top: 18px;
+    transform: rotate(20deg);
+}
+
+.mouth {
+    position: absolute;
+    width: 285px;
+    height: 135px;
+    top: 225px;
+    left: 85px;
+    z-index: 1;
+    border: 3px solid #261815;
+    border-top-color: transparent;
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    background-color: #e1002a;
+    transform: rotate(-10deg);
+    overflow: hidden;
+}
+
+.mouth::before {
+    content: '';
+    position: absolute;
+    width: 223px;
+    height: 100px;
+    top: 52px;
+    left: 31px;
+    z-index: 1;
+    background-color: #ee7c1b;
+    border-radius: 95% 70% 50% 79% /100% 47% 50% 50%;
+    border: 3px solid #261815;
+    transform: rotate(8deg);
+}
+
+/* 脖子 */
+.neck {
+    position: absolute;
+    height: 20px;
+    width: 275px;
+    top: 403px;
+    left: 163px;
+    z-index: 2;
+    border: 3px solid #261815;
+    border-radius: 15px;
+    background-color: #e1002a;
+    transform: rotate(-5deg);
+}
+
+/* 胳膊 */
+.right-arm {
+    position: absolute;
+    width: 164px;
+    height: 77px;
+    top: 411px;
+    left: 20px;
+    background-color: #00a0e8;
+    border: 3px solid #261815;
+    border-right-color: transparent;
+    border-bottom-left-radius: 88% 51%;
+    transform: rotate(15deg);
+}
+
+.right-arm::before {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -22px;
+    left: -19px;
+    border: 3px solid #261815;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.left-arm {
+    position: absolute;
+    width: 169px;
+    height: 77px;
+    top: 345px;
+    left: 382px;
+    background-color: #00a0e8;
+    border: 3px solid #261815;
+    border-top-left-radius: 100% 50%;
+    transform: rotate(130deg);
+}
+
+.left-arm::before {
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: -72px;
+    border: 3px solid #261815;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.Doraemon-body {
+    position: absolute;
+    width: 280px;
+    height: 208px;
+    top: 430px;
+    left: 167px;
+    z-index: 1;
+    background-color: #00a0e8;
+    transform: rotate(-2deg);
+    /* opacity: .5; */
+}
+
+.Doraemon-body::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 70px;
+    top: 206px;
+    left: 27px;
+    z-index: 3;
+    background-color: #00a0e8;
+    border-style: solid;
+    border-color: transparent transparent #261815 transparent;
+    border-width: 3px;
+    border-radius: 56%;
+    transform: rotate(-7deg);
+}
+
+.Doraemon-body::after {
+    content: '';
+    position: absolute;
+    height: 46px;
+    width: 244px;
+    top: 199px;
+    left: 74px;
+    z-index: 2;
+    border-style: solid;
+    border-color: #261815 transparent transparent;
+    border-width: 3px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: rotate(2deg);
+}
+
+.pocket {
+    position: absolute;
+    height: 203px;
+    width: 234px;
+    top: -41px;
+    left: 30px;
+    border: 3px solid #261815;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.pocket::before {
+    content: '';
+    position: absolute;
+    width: 196px;
+    height: 85px;
+    top: 100px;
+    left: 20px;
+    border: 3px solid #261815;
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    transform: rotate(-3deg);
+
+}
+
+.right-leg {
+    position: absolute;
+    height: 120px;
+    width: 80px;
+    top: 523px;
+    left: 143px;
+    z-index: 1;
+    background-color: #00a0e8;
+    border: 3px solid #261815;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-top-left-radius: 46% 62%;
+    border-bottom-left-radius: 68% 43%;
+    border-bottom-right-radius: 30% 6%;
+    border-top-right-radius: 100% 100%;
+    transform: rotate(6deg);
+}
+
+.right-foot {
+    position: absolute;
+    height: 164px;
+    width: 126px;
+    top: 524px;
+    left: 102px;
+    border-radius: 50%;
+    border: 3px solid #261815;
+    transform: rotate(26deg);
+}
+
+.left-foot {
+    position: absolute;
+    height: 180px;
+    width: 115px;
+    top: 479px;
+    left: 436px;
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 50% 50% 50% 50% /50% 50% 50% 50%;
+    border: 3px solid #261815;
+    transform: rotate(13deg);
+}
+
+.small-bell1 {
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    top: 410px;
+    left: 285px;
+    z-index: 2;
+    border-radius: 50%;
+    border: 3px solid #261815;
+    background-color: #fde53a;
+}
+
+.small-bell1::before {
+    content: '';
+    position: absolute;
+    width: 67px;
+    height: 8px;
+    top: 13px;
+    left: -5px;
+    border: 3px solid #261815;
+    background-color: #fde53a;
+    transform: rotate(-5deg);
+    border-radius: 8px;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+}
+
+.small-bell2 {
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    top: 323px;
+    left: 697px;
+    z-index: 2;
+    border-radius: 50%;
+    border: 3px solid #261815;
+    background-color: #fde53a;
+    animation: bell-auto 2s linear infinite;
+
+}
+
+.small-bell2::before {
+    content: '';
+    position: absolute;
+    width: 67px;
+    height: 8px;
+    top: 13px;
+    left: -5px;
+    border: 3px solid #261815;
+    background-color: #fde53a;
+    transform: rotate(-5deg);
+    border-radius: 8px;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+}
+
+@keyframes bell-auto {
+    from{
+        transform:rotate(0deg)
+    }
+    to{
+        transform:rotate(360deg)
+    }
+}
+.circle01 {
+    position: absolute;
+    height: 8px;
+    width: 16px;
+    top: 33px;
+    left: 23px;
+    background-color: #776b53;
+    border-radius: 50%;
+    border: 3px solid #261815;
+    transform: rotate(-5deg);
+}
+
+.circle01::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 10px;
+    top: 6px;
+    left: -4px;
+    border-style: solid;
+    border-color: transparent #261815 transparent transparent;
+    border-bottom-right-radius: 50% 100%;
+}
+
+
+
+
+.text{
+    position: relative;
+    width: 150px;
+    left: 53px;
+    bottom: 500px;
+    height: 28px;
+}
+
+p{
+    position: absolute;
+    bottom: 25px;
+    left: 37px;
+    font-size: 26px;
+    margin-right: -179px;
+    color: #ff4202;
+    font-style: italic;
+}
+span{
+    position: absolute;
+    bottom: 8px;
+    left: 35px;
+    font-size: 26px;
+    margin-right: -186px;
+    color: #ff4202;
+    font-style: italic;
+}
